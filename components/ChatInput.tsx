@@ -56,7 +56,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask Nebula anything..."
+            placeholder="Ask Siri-AI anything..."
             rows={1}
             disabled={isLoading}
             className="flex-1 bg-transparent text-slate-200 placeholder-slate-500 px-2 py-3 focus:outline-none resize-none overflow-y-auto font-sans"
@@ -79,7 +79,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSend, isLoading }) => {
         </form>
       </div>
       <div className="text-center mt-3 text-xs text-slate-600 font-mono">
-        Nebula AI Model v2.5 • Powered by Gemini
+        Siri-AI Assistant • Powered by Gemini
       </div>
     </div>
   );

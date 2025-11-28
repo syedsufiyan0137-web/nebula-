@@ -99,10 +99,10 @@ const App: React.FC = () => {
             <Zap className="text-white" size={24} />
           </div>
           <div>
-            <h1 className="font-bold text-lg tracking-wide text-white">NEBULA<span className="text-cyan-400">.AI</span></h1>
+            <h1 className="font-bold text-lg tracking-wide text-white">Siri<span className="text-cyan-400">-AI</span></h1>
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-              <span className="text-xs text-slate-400 font-mono tracking-wider">SYSTEM ONLINE</span>
+              <span className="text-xs text-slate-400 font-mono tracking-wider">ONLINE</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const App: React.FC = () => {
            )}
           <a href="#" className="hidden md:flex items-center gap-2 text-xs text-slate-500 hover:text-cyan-400 transition-colors border border-slate-800 rounded-full px-3 py-1">
             <Terminal size={12} />
-            <span>v1.0.4</span>
+            <span>v2.5</span>
           </a>
         </div>
       </header>
@@ -133,30 +133,30 @@ const App: React.FC = () => {
               <div className="w-20 h-20 rounded-2xl bg-slate-800/50 flex items-center justify-center mb-6 border border-slate-700 shadow-2xl">
                 <SparklesIcon />
               </div>
-              <h2 className="text-3xl font-bold text-white mb-3">Welcome to Nebula</h2>
+              <h2 className="text-3xl font-bold text-white mb-3">Welcome to Siri-AI</h2>
               <p className="text-slate-400 max-w-md mb-8">
-                Your advanced AI companion for creative writing, analysis, and coding tasks.
+                Your smart, friendly voice-assistant companion. How can I help you today?
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-lg">
                 <SuggestionCard 
-                  title="Explain Quantum Computing" 
-                  subtitle="Like I'm five years old"
+                  title="Tell me a joke" 
+                  subtitle="Something funny"
+                  onClick={() => handleSendMessage("Tell me a funny joke to brighten my day")}
+                />
+                <SuggestionCard 
+                  title="What is Quantum Computing?" 
+                  subtitle="Explain simply"
                   onClick={() => handleSendMessage("Explain Quantum Computing like I'm five years old")}
                 />
                 <SuggestionCard 
-                  title="Write a Python script" 
-                  subtitle="To automate file backups"
-                  onClick={() => handleSendMessage("Write a Python script to automate file backups")}
+                  title="Write a poem" 
+                  subtitle="About space and stars"
+                  onClick={() => handleSendMessage("Write a short poem about the stars in the night sky")}
                 />
                 <SuggestionCard 
-                  title="Design a neon city" 
-                  subtitle="Describe the aesthetic"
-                  onClick={() => handleSendMessage("Describe a futuristic neon city aesthetic")}
-                />
-                <SuggestionCard 
-                  title="Debug this code" 
-                  subtitle="Find errors in my snippet"
+                  title="Help me with code" 
+                  subtitle="Debug a React hook"
                   onClick={() => handleSendMessage("Help me debug a React useEffect hook loop")}
                 />
               </div>
